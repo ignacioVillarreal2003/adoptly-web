@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+:root {
+  /* GRAPEFRUIT */
+  --grapefruit-light: #ED5565;
+  --grapefruit-dark: #DA4453;
+
+  /* BITTERSWEET */
+  --bittersweet-light: #FC6E51;
+  --bittersweet-dark: #E9573F;
+
+  /* SUNFLOWER */
+  --sunflower-light: #FFCE54;
+  --sunflower-dark: #F6BB42;
+
+  /* GRASS */
+  --grass-light: #A0D468;
+  --grass-dark: #8CC152;
+
+  /* MINT */
+  --mint-light: #48CFAD;
+  --mint-dark: #37BC9B;
+
+  /* AQUA */
+  --aqua-light: #4FC1E9;
+  --aqua-dark: #3BAFDA;
+
+  /* BLUE JEANS */
+  --bluejeans-light: #5D9CEC;
+  --bluejeans-dark: #4A89DC;
+
+  /* LAVANDER */
+  --lavander-light: #AC92EC;
+  --lavander-dark: #967ADC;
+
+  /* PINK ROSE */
+  --pinkrose-light: #EC87C0;
+  --pinkrose-dark: #D770AD;
+
+  /* LIGHT GRAY */
+  --lightgray-light: #F5F7FA;
+  --lightgray-dark: #E6E9ED;
+
+  /* MEDIUM GRAY */
+  --mediumgray-light: #CCD1D9;
+  --mediumgray-dark: #AAB2BD;
+
+  /* DARK GRAY */
+  --darkgray-light: #656D78;
+  --darkgray-dark: #434A54;
+
+}
