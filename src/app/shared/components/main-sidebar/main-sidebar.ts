@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {MainSidebarService} from '../core/services/main-sidebar-service';
+import {MainSidebarService} from '../../../core/services/main-sidebar-service';
 import {NgClass} from '@angular/common';
 import {MatIcon} from '@angular/material/icon';
 

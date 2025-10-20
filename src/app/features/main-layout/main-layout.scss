@@ -1,0 +1,17 @@
+$sidebar-width: 280px;
+$sidebar-collapsed-width: 80px;
+$transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+.main-layout {
+  width: 100%;
+  min-height: 100vh;
+
+  .main-layout__content {
+    margin-left: $sidebar-width;
+    transition: $transition;
+
+    &.collapsed {
+      margin-left: $sidebar-collapsed-width;
+    }
+  }
+}
