@@ -25,7 +25,12 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/styles/color.css",
+              "src/styles/dialog.css",
+              "src/styles/font.css",
+              "src/styles/icon.css",
+              "src/styles/size.css"
             ]
           },
           "configurations": {

@@ -1,0 +1,26 @@
+@import 'material-symbols/index.css';
+
+:root {
+  --mat-icon-size: 42px;
+}
+
+.material-symbols-rounded {
+  width: var(--mat-icon-size) !important;
+  height: var(--mat-icon-size) !important;
+  font-size: var(--mat-icon-size) !important;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 48;
+  font-family: 'Material Symbols Rounded', serif;
+  font-feature-settings: 'liga';
+}
+
+.filled {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 48;
+}
