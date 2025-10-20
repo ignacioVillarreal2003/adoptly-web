@@ -3,6 +3,7 @@ import {MainSidebar} from '../../shared/components/main-sidebar/main-sidebar';
 import {RouterOutlet} from '@angular/router';
 import {NgClass} from '@angular/common';
 import {MainSidebarService} from '../../core/services/main-sidebar-service';
+import {Background} from '../../shared/components/background/background';
 
 @Component({
   selector: 'app-main-layout',
@@ -10,6 +11,7 @@ import {MainSidebarService} from '../../core/services/main-sidebar-service';
     MainSidebar,
     RouterOutlet,
     NgClass,
+    Background,
   ],
   templateUrl: './main-layout.html',
   styleUrl: './main-layout.scss'

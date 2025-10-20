@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-pet-item',
   imports: [],
   templateUrl: './pet-item.html',
-  styleUrl: './pet-item.css'
+  styleUrl: './pet-item.scss'
 })
 export class PetItem {
 

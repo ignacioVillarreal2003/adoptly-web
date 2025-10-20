@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { PetItem } from '../pet-item/pet-item';
 
 @Component({
   selector: 'app-pets-list',
-  imports: [],
+  imports: [PetItem],
   templateUrl: './pets-list.html',
-  styleUrl: './pets-list.css'
+  styleUrl: './pets-list.scss',
 })
-export class PetsList {
-
-}
+export class PetsList {}

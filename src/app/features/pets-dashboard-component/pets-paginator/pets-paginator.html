@@ -1,1 +1,15 @@
-<p>pets-paginator works!</p>
+<div class="pets-paginator">
+    <button (click)="previousPage()" [disabled]="currentPage === 1">
+                <mat-icon class="material-symbols-rounded">first_page</mat-icon>
+    </button>
+    <button (click)="previousPage()" [disabled]="currentPage === 1">
+                <mat-icon class="material-symbols-rounded">chevron_left</mat-icon>
+    </button>
+    <span>Page {{ currentPage }} of {{ totalPages }}</span>
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">
+        <mat-icon class="material-symbols-rounded">chevron_right</mat-icon>
+    </button>
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">
+        <mat-icon class="material-symbols-rounded">last_page</mat-icon>
+    </button>
+</div>
