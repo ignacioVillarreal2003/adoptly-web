@@ -2,17 +2,67 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  background-color: var(--section-background);
+  padding: 20px;
+  border-radius: 6px;
 
     .pets-toolbar__search {
         width: 100%;
         max-width: 600px;
-        display: flex;
-        gap: 10px;
-        align-items: center;
+      position: relative;
 
         input {
             width: 100%;
-            padding: 10px;
+            padding: 12px 50px 12px 12px;
+          border: 2px solid var(--primary-background);
+          border-radius: 6px;
+          color: var(--foreground);
+          font-size: 18px;
+          font-weight: 500;
+          background-color: var(--section-background);
+
+          &:focus-visible {
+            outline: 3px solid var(--primary-focus);
+          }
         }
+
+      button {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        mat-icon {
+          width: 38px !important;
+          height: 38px !important;
+          font-size: 38px !important;
+          color: var(--foreground);
+        }
+      }
     }
+
+  .pets-toolbar__filter {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--secondary-background);
+    transition: all .1s ease;
+
+    mat-icon {
+      color: var(--secondary-foreground);
+    }
+
+    &:active {
+      transform: scale(1.1);
+    }
+  }
 }

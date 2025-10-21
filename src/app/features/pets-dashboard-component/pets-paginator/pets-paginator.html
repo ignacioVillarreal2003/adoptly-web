@@ -1,15 +1,24 @@
-<div class="pets-paginator">
-    <button (click)="previousPage()" [disabled]="currentPage === 1">
-                <mat-icon class="material-symbols-rounded">first_page</mat-icon>
-    </button>
-    <button (click)="previousPage()" [disabled]="currentPage === 1">
-                <mat-icon class="material-symbols-rounded">chevron_left</mat-icon>
-    </button>
-    <span>Page {{ currentPage }} of {{ totalPages }}</span>
-    <button (click)="nextPage()" [disabled]="currentPage === totalPages">
+<section class="pets-paginator">
+    <div class="container">
+      <button class="special" (click)="previousPage()" [disabled]="currentPage === 1">
+        <mat-icon class="material-symbols-rounded">first_page</mat-icon>
+      </button>
+      <button class="special" (click)="previousPage()" [disabled]="currentPage === 1">
+        <mat-icon class="material-symbols-rounded">chevron_left</mat-icon>
+      </button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+
+      <button class="special" (click)="nextPage()" [disabled]="currentPage === totalPages">
         <mat-icon class="material-symbols-rounded">chevron_right</mat-icon>
-    </button>
-    <button (click)="nextPage()" [disabled]="currentPage === totalPages">
+      </button>
+      <button class="special" (click)="nextPage()" [disabled]="currentPage === totalPages">
         <mat-icon class="material-symbols-rounded">last_page</mat-icon>
-    </button>
-</div>
+      </button>
+    </div>
+</section>
