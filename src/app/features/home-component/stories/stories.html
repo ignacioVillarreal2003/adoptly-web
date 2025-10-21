@@ -1,0 +1,23 @@
+<section class="happy-stories">
+  <h1>Some happy stories ...</h1>
+  <div class="carousel">
+    <div class="story-track">
+      <ul class="story-list">
+        @for (story of STORIES; track story.id) {
+          <li class="story-item" [ngStyle]="{ 'background-color': 'var(' + story.color + ')' }">
+            <p>{{ story.story }}</p>
+            <span>{{ story.date }}</span>
+          </li>
+        }
+      </ul>
+      <ul class="story-list">
+        @for (story of STORIES; track 'clone-' + story.id) {
+          <li class="story-item" [ngStyle]="{ 'background-color': 'var(' + story.color + ')' }">
+            <p>{{ story.story }}</p>
+            <span>{{ story.date }}</span>
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+</section>

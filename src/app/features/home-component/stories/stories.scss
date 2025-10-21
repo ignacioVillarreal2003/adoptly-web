@@ -1,0 +1,80 @@
+.happy-stories {
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+  background: #fafafa;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .story-track {
+    display: flex;
+    width: fit-content;
+    animation: scroll 5s linear infinite;
+  }
+
+  .story-list {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .story-item {
+    flex: 0 0 auto;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    height: 260px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+  }
+
+  .story-item:hover {
+    transform: translateY(-6px);
+  }
+
+  .story-item p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .story-item span {
+    font-size: 0.85rem;
+    color: #555;
+    text-align: right;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* 🚀 Mejora visual */
+  .story-track {
+    will-change: transform;
+  }
+
+  /* ✋ Pausar al pasar el mouse */
+  .carousel:hover .story-track {
+    animation-play-state: paused;
+  }
+}

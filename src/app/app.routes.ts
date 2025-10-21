@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import {MainLayout} from './features/main-layout/main-layout';
 import {PetsDashboard} from './features/pets-dashboard-component/pets-dashboard/pets-dashboard';
+import {Home} from './features/home-component/home/home';
 
 export const routes: Routes = [
   /*{
@@ -16,8 +17,9 @@ export const routes: Routes = [
     path: '',
     component: MainLayout,
     children: [
-      { path: '', redirectTo: 'pets-dashboard', pathMatch: 'full' },
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'pets-dashboard', component: PetsDashboard },
+      { path: 'home', component: Home },
     ],
   },
   { path: '**', redirectTo: '' },
