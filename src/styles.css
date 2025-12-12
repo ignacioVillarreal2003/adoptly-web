@@ -9,6 +9,8 @@
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+
+  transition: all 0.2s ease;
 }
 
 button,

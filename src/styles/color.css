@@ -40,9 +40,12 @@
   --sidebar-primary-foreground: var(--foreground);
   --section-background: rgb(245, 245, 244);
   --section-foreground: rgb(30, 41, 59);
+  --section-foreground-2: rgb(40, 51, 68);
+  --sub-section-background: rgb(231, 231, 231);
   --primary-background: rgb(53, 107, 252);
   --primary-foreground: rgb(255, 255, 255);
   --primary-focus: rgba(53, 107, 252, 0.3);
+  --primary-hover: rgba(53, 107, 252, 0.3);
   --destructive-background: rgb(239, 68, 68);
   --secondary-background: rgb(214, 211, 209);
   --secondary-foreground: rgb(75, 85, 99);
@@ -61,9 +64,12 @@
   --sidebar-primary-foreground:var(--foreground);
   --section-background: rgb(44, 40, 37);
   --section-foreground: rgb(226, 232, 240);
+  --section-foreground-2: rgb(181, 191, 205);
+  --sub-section-background: rgb(54, 52, 50);
   --primary-background: rgb(53, 107, 252);
   --primary-foreground: rgb(255, 255, 255);
   --primary-focus: rgba(53, 107, 252, 0.3);
+  --primary-hover: rgba(53, 107, 252, 0.3);
   --destructive-background: rgb(239, 68, 68);
   --secondary-background: rgb(58, 54, 51);
   --secondary-foreground: rgb(209, 213, 219);
